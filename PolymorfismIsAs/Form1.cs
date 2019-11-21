@@ -28,7 +28,17 @@ namespace PolymorfismIsAs
             {
                 obj = new B();
             }
-            tbDescription.Text = obj.Description();
+
+            if (obj is B)
+            {
+                B bObj = (obj as B);
+                tbDescription.Text = bObj.Description();
+            }
+            else 
+            {
+                tbDescription.Text = obj.Description();
+            }
+            
         }
     }
 }
