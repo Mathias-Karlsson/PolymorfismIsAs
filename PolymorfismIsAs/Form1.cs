@@ -16,5 +16,19 @@ namespace PolymorfismIsAs
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            A obj;
+            if (rbA.Checked)
+            {
+                obj = new A();
+            }
+            else
+            {
+                obj = new B();
+            }
+            tbDescription.Text = obj.Description();
+        }
     }
 }

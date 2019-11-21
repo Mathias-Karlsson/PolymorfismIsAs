@@ -8,7 +8,7 @@ namespace PolymorfismIsAs
 {
     class B: A
     {
-        public string Description()
+        public new string Description()
         {
             return "Objektet är av typen B";
         }
